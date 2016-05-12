@@ -27,7 +27,10 @@ app.use(sassMiddleware({
 
 app.get('/javascripts/bundle.js', browserify('./client/script.js'));
 
-if (app.get('env') == 'development') {
+ var mongoose = require('mongoose');
+ mongoose.connect('mongodb://localhost/todos');
+
+ if (app.get('env') == 'development') {
   var browserSync = require('browser-sync');
   var config = {
     files: ["public/**/*.{js,css}", "client/*.js", "sass/**/*.scss", "views/**/*.hbs"],
