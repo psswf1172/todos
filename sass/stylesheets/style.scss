@@ -1,0 +1,15 @@
+$font-stack: "Lucida Grande", Helvetica, Arial, sans-serif;
+$primary-link-color: #00B7FF;
+body {
+  padding: 50px;
+  font: 14px $font-stack;
+  a {
+    color: $primary-link-color;
+  }
+  ul {
+    list-style-type: none;
+    .checked {
+      text-decoration: line-through;
+    }
+  }
+}
