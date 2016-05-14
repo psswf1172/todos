@@ -1,3 +1,5 @@
+var todos = require('./routes/todos/index');
+var todos_api = require('./routes/todos/api');
 var express = require('express');
 var exphbs  = require('express-handlebars');
 var sassMiddleware = require('node-sass-middleware');
@@ -54,6 +56,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/todos', todos);
+app.use('/api/todos', todos_api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
