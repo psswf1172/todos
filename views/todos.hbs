@@ -1,9 +1,11 @@
-{{> add}}
-
-<ul>
-{{#each todos}}
-  {{> todo this}}
-{{/each}}
-</ul>
-
-{{> footer}}
+<div class="container">
+  <div class="well">
+    {{> add}}
+    <ul class="list-group">
+      {{#each todos}}
+        {{> todo this}}
+      {{/each}}
+    </ul>
+    {{> footer}}
+  </div>
+</div>

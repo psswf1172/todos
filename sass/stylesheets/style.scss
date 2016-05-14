@@ -28,4 +28,25 @@ body {
   .hide {
    display: none;
   }
+
+  .navbar-default {
+    background-image: none;
+    background-color: #e74c3c;
+    border-color: #c0392b;
+    .navbar-brand {
+      color: #ecf0f1;
+      &:hover, &:focus {
+      color: #ffbbbc; 
+     }
+    }
+  }
+
+  .navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+  }
 }

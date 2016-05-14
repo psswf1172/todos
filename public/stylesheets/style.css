@@ -16,3 +16,18 @@ body {
     padding: 0 10px; }
   body .hide {
     display: none; }
+  body .navbar-default {
+    background-image: none;
+    background-color: #e74c3c;
+    border-color: #c0392b; }
+    body .navbar-default .navbar-brand {
+      color: #ecf0f1; }
+      body .navbar-default .navbar-brand:hover, body .navbar-default .navbar-brand:focus {
+        color: #ffbbbc; }
+  body .navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 25px; }
