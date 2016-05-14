@@ -2,8 +2,17 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
   body a {
-    color: #00B7FF; }
+    color: #00B7FF;
+    text-decoration: none;
+    cursor: pointer; }
+    body a:hover {
+      text-decoration: underline; }
   body ul {
     list-style-type: none; }
     body ul .checked {
       text-decoration: line-through; }
+  body .footer div {
+    float: left;
+    padding: 0 10px; }
+  body .hide {
+    display: none; }

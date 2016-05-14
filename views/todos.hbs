@@ -1,8 +1,9 @@
+{{> add}}
+
 <ul>
 {{#each todos}}
-  <li>
-      <input type="checkbox" {{#if this.done}}checked{{/if}}>
-      <span>{{this.text}}</span>
-  </li>
+  {{> todo this}}
 {{/each}}
 </ul>
+
+{{> footer}}

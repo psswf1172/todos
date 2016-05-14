@@ -12,19 +12,19 @@ router.route('/')
     .catch(next)
     .error(console.error);
   })
-  .post(function(req, res, next){
-  	var todo = new Todo();
-  	todo.text = req.body.text;
-  	todo.saveAsync()
-  	.then(function(todo){
-  		console.log("success");
-  		res.json({'status': 'success', 'todo': todo});
-  	})
-  	.catch(function(e){
-  		console.log('fail');
-  		res.json({'status': 'error', 'error': e});
-  	})
-  	.error(console.error);
+  .post(function(req, res, next) {
+    var todo = new Todo();
+    todo.text = req.body.text;
+    todo.saveAsync()
+    .then(function(todo) {
+      console.log("success");
+      res.json({'status': 'success', 'todo': todo});
+    })
+    .catch(function(e) {
+      console.log("fail");
+      res.json({'status': 'error', 'error': e});
+    })
+    .error(console.error);
   });
 
   router.route('/:id')
@@ -50,7 +50,7 @@ router.route('/')
       return res.status(400).json({'status': 'fail', 'error': e});
     });
   })
-    .delete(function(req, res, next) {
+  .delete(function(req, res, next) {
     Todo.findByIdAndRemoveAsync(req.params.id)
     .then(function(deletedTodo) {
       res.json({'status': 'success', 'todo': deletedTodo});
@@ -59,5 +59,4 @@ router.route('/')
       res.status(400).json({'status': 'fail', 'error': e});
     });
   });
-
 module.exports = router;
