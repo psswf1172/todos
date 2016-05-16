@@ -96,7 +96,7 @@ $(function() {
 });
 
 var addTodo = function() {
-  var text = $('#add-todo-text').val();
+  var text = $('.add-todo-text').val();
    $.ajax({
      url: '/api/todos',
      type: 'POST',
@@ -105,10 +105,10 @@ var addTodo = function() {
      },
      dataType: 'json',
      success: function(data) {
-      var todo = data.todo[0];
+      var todo = data.todo;
       var newLiHtml = todoTemplate(todo);
       $('form + ul').append(newLiHtml);
-      $('#add-todo-text').val('');
+      $('.add-todo-text').val('');
     }
   });
 };
