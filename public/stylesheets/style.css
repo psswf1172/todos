@@ -31,3 +31,13 @@ body {
     text-align: center;
     margin: auto;
     font-size: 25px; }
+  body #breakTime {
+    margin-top: 25px;
+    color: red;
+    font-size: 25px; }
+  body #workTime {
+    margin-top: 25px;
+    color: green;
+    font-size: 25px; }
+  body #stop {
+    margin-top: 18px; }
