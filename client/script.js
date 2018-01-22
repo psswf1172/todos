@@ -234,3 +234,12 @@ $(document).ready(
     }
 
   });
+
+
+// var quote = {};
+// $(document).ready(
+//   function() {
+//     var quotes = ["The superior man is modest in his speech, but exceeds in his actions.  Confucius", "Happiness is not something ready made. It comes from your own actions.  Dalai Lama", "Think like a man of action, act like a man of thought. General 'Mad Dog' Mattis", "An idea that is developed and put into action is more important than an idea that exists only as an idea.  Buddha", "Success seems to be connected with action. Successful people keep moving. They make mistakes, but they don't quit.  Conrad Hilton", "Great works are performed not by strength, but by perseverance. Samuel Johnson", "I learned the value of hard work by working hard.  Margaret Mead", "Amateurs sit and wait for inspiration, the rest of us just get up and go to work. Stephen King", "We who cut mere stones must always be envisioning cathedrals. Quarry Worker's Creed", "The only thing worse than starting something and failing … is not starting. Seth Godin", "You may be disappointed if you fail, but you are doomed if you don't try. Beverly Sills", "Success is not final, failure is not fatal: it is the courage to continue that counts.  Winston Churchill", "Dream big and dare to fail. Norman Vaughan", "Courage doesn't always roar. Sometimes it is the quiet voice at the end of the day saying, 'I will try again tomorrow.'  M.A. Radmacher", "In my next life I will try to commit more errors.  Jorge Luis Borges"];
+//     var theQuote = Math.random()
+//       console.log(quotes(theQuote));
+//   }
